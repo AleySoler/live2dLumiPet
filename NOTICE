@@ -1,0 +1,23 @@
+NOTICE — Third-party assets and trademarks
+
+The MIT licence in LICENSE covers this project's program source code only.
+It does NOT cover the following:
+
+1. Live2D model files, textures, PSDs and their derivatives.
+   This repository and the released binaries contain NO Live2D model files.
+   All models are supplied by the user and remain the property of their
+   respective authors; importing a model does not change its licence.
+   The model used for development and testing is DeepSeek-chan / 大肥鱼,
+   distributed free of charge by its authors under their own Terms of Use,
+   which forbid reselling the model and re-uploading its files.
+   Model copyright: Kamiya Ryoko (illustration / PSD split),
+   NeonNeko (Live2D rigging).
+   How to obtain the test model: https://www.bilibili.com/video/BV1KmxY66EZ3
+
+2. "Live2D" and "Cubism" are trademarks of Live2D Inc. This project is an
+   unofficial, community-made tool and is not affiliated with or endorsed by
+   Live2D Inc. Cubism Core is loaded from Live2D's official CDN at build time
+   and is not redistributed here.
+
+3. Third-party libraries (Electron, pixi.js, React, MediaPipe,
+   pixi-live2d-display) are used under their respective licences.
