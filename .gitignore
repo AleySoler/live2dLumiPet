@@ -1,0 +1,28 @@
+# ---- 依赖与构建产物 ----
+node_modules/
+dist/
+release/
+.cache/
+public/model/
+public/vendor/
+
+# ---- 模型资源 ----
+# 内置模型与 PSD 的版权归原作者，明确禁止二次上传，因此一律不入库。
+# 首次构建时请把模型放到 assets/model-src/<id>/，脚本会自行归一化。
+assets/model-src/
+assets/DeepSeek-chan*/
+assets/*.zip
+*.psd
+*.moc3
+
+# ---- 运行时 / 调试产物 ----
+smoke-out/
+*.log
+*.err
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

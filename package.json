@@ -1,0 +1,38 @@
+{
+  "name": "live2dlumipet",
+  "productName": "live2dLumiPet",
+  "version": "1.0.0",
+  "description": "live2dLumiPet（简称 lLP）桌宠：把 Live2D 模型的精准驾驭（面部捕捉 + 全局热键）与桌面驻留合二为一，支持导入自定义模型",
+  "private": true,
+  "main": "dist/main/index.js",
+  "author": "LumiPet",
+  "license": "MIT",
+  "scripts": {
+    "assets": "node scripts/prepare-assets.mjs",
+    "build:main": "tsc -p tsconfig.main.json",
+    "build:renderer": "vite build",
+    "build": "npm run assets && npm run build:main && npm run build:renderer",
+    "start": "npm run build && electron .",
+    "app": "electron .",
+    "smoke": "electron . --smoke",
+    "typecheck": "tsc -p tsconfig.main.json --noEmit && tsc -p tsconfig.web.json --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "package": "node scripts/package-portable.mjs"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "0.10.35",
+    "pixi-live2d-display": "0.4.0",
+    "pixi.js": "6.5.10",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.0",
+    "@types/react": "19.0.2",
+    "@types/react-dom": "19.0.2",
+    "@vitejs/plugin-react": "5.0.4",
+    "electron": "45.2.2",
+    "typescript": "5.9.3",
+    "vite": "7.3.7"
+  }
+}
